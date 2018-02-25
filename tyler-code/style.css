@@ -1,0 +1,119 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  /* color:rgb(39, 39, 39); */
+}
+
+body {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header h1 {
+  text-align: center;
+  text-decoration-line: underline;
+}
+
+section {
+  margin-top: 50px;
+}
+
+label {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+input {
+  display: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
+/* skipping down */
+
+input[type=text], select {
+  width: 100%;
+  height: 50px;
+  /* padding: 12px 20px; */
+  font-size: 30px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#text-input input:invalid {
+  border: 1px solid red;
+}
+
+/* radio section */
+
+#radio .labels, #checkbox .labels {
+  width: 65px;
+  height: 70px;
+  display: block;
+  font-size: 2.5em;
+  background-image: url('sprites/form-elements-sprite.png');
+  background-size : 440px 200px;
+}
+
+#radio .labels div, #checkbox .labels div {
+  width: 200px;
+  height: 40px;
+  margin: auto;
+  text-align: center;
+  font-size: 30px; 
+}
+
+#checkbox input[type="checkbox"]:not(:checked) + label {
+  height: 70px;
+  background-position: -480px -275px;
+}
+
+#checkbox #input-pri-checkbox:checked + label {
+  height: 70px;
+  background-position: -547px -275px;
+}
+
+
+#radio input[type="checkbox"]:not(:checked) + label {
+  height: 70px;
+  background-position: -610px -275px;
+}
+
+#radio #input-pri-radio:checked + label {
+  height: 70px;
+  background-position: -680px -275px;
+}
+
+
+
+/* buttons section */
+
+#buttons .labels {
+  width: 250px;
+  height: 50px;
+  display: block;
+  font-size: 2.5em;
+}
+
+#buttons .labels div {
+  width: 200px;
+  /* height: 40px; */
+  margin: auto;
+  padding-top: 8px;
+  text-align: center;
+  font-size: 30px;
+}
+
+#buttons input[type="checkbox"]:not(:checked) + label {
+  background-color: lightgrey;
+  color: rgb(66, 66, 66);
+}
+
+#buttons #input-pri-buttons:checked + label {
+  background-color: rgb(66, 66, 66);
+  color: white;
+}
+
